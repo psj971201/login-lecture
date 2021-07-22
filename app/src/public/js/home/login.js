@@ -20,10 +20,10 @@ function login(){
         body : JSON.stringify(req),
     })
     .then((res) => res.json())
-    .then((res) =>{
-        if(res.success){
+    .then((res) => {
+        if(res.success) {
             location.href = "/"
-        }else{
+        } else {
             alert(res.msg);
         }
     })
